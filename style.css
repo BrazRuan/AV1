@@ -1,0 +1,115 @@
+/* Corpo */
+body{
+    background-color: #333;
+    color: #fff;
+    font-size:24px;
+    font-family: arial;
+    margin:0;
+    padding: 0;
+}
+
+/* Containe total   */
+#container{
+    display:flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+#painel-esquerdo{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    border-right: 1px dashed #ccc;
+    align-items: center;
+}
+
+.input-jogador{
+    height: 40px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+    text-align: center; 
+}
+
+#painel-direito{
+    display: flex;
+    flex-direction: column;
+    flex:4;
+    justify-content: center;
+    align-items: center;
+}
+
+#tabuleiro{
+    display:flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 50vh;
+}
+.tabuleiro-linha{
+
+    display: flex;
+    flex-direction: row;
+    flex:1;
+    border-bottom: 0px;
+    border-bottom: 1px solid #ccc;
+    justify-content: center;
+    justify-items: center;
+}
+
+.tabuleiro-jogada{
+    display:flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    cursor: pointer;
+    border-right: 1px solid #ccc;
+}
+.tabuleiro-jogada.x,.tabuleiro-jogada.o{
+    cursor: not-allowed;
+}
+
+.tabuleiro-jogada:last-child{
+    border-right: 0px;
+}
+
+.tabuleiro-linha:last-child{
+    border-bottom: 0px solid #ccc;   
+}
+
+.tabuleiro-jogada:hover{
+    color: #f903a9;
+    background-color: #3f3f3f;
+}
+
+.input-jogador::placeholder{
+    color: lightslategray;
+}
+
+
+#caixa-acao{
+    margin-top: 1px;
+}
+
+#botao-iniciar{
+    background-color: #861480;
+    width: 40vw;
+    height: 60px;
+    border: 2px solid #f903a9;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;    
+}
+
+#botao-iniciar:hover{
+    background-color: #ad17a6;
+    opacity: 0.8;
+}
+
+.mensagem{
+    font-size: 20px;
+    color: green;
+}

@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="container">
+        <div id="painel-esquerdo">
+            <input type="text" placeholder="Digite jogador 1 (O)" class="input-jogador" />
+            <input type="text" placeholder="Digite jogador 2 (X)" class="input-jogador" />
+            <div class="mensagem">
+                <div class="mensagem" id="vencedor-rodada1"></div>
+                <div class="mensagem" id="vencedor-rodada2"></div>
+                <div class="mensagem" id="vencedor"></div>
+            </div>
+        </div>
+        <div id="painel-direito">
+            <div id="turno"></div>
+            <div id="tabuleiro">                
+                <div class="tabuleiro-linha" id="linha-um">
+                    <div id="1" class="tabuleiro-jogada" onclick="jogada('1')"></div>
+                    <div id="2" class="tabuleiro-jogada" onclick="jogada('2')"></div>
+                    <div id="3" class="tabuleiro-jogada" onclick="jogada('3')"></div>
+                </div>
+                <div class="tabuleiro-linha" id="linha-dois">
+                    <div id="4" class="tabuleiro-jogada" onclick="jogada('4')"></div>
+                    <div id="5" class="tabuleiro-jogada" onclick="jogada('5')"></div>
+                    <div id="6" class="tabuleiro-jogada" onclick="jogada('6')"></div>
+                </div>
+                <div class="tabuleiro-linha" id="linha-tres">
+                    <div id="7" class="tabuleiro-jogada" onclick="jogada('7')"></div>
+                    <div id="8" class="tabuleiro-jogada" onclick="jogada('8')"></div>
+                    <div id="9" class="tabuleiro-jogada" onclick="jogada('9')"></div>
+                </div>
+            </div>
+            <div id="caixa-acao">
+                <div id="botao-iniciar" onclick="comecar()">Começar o Jogo</div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
